@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Background for RadioButton tabs (timer mode, analytics period, theme mode).
+    Checked  → filled primary pill
+    Pressed  → subtle primary tint
+    Default  → transparent
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="@color/colorPrimary"/>
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#1A4F46E5"/>
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/transparent"/>
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+
+</selector>

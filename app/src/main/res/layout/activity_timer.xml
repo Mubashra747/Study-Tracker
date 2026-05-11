@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  activity_timer.xml  —  POMODORO TIMER SCREEN
+
+  L9   RadioGroup — Work / Short Break / Long Break selector
+         Only one mode active at a time (mutually exclusive).
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/timerToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="@string/timer_title"
+            app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!--
+                 L9 — RadioGroup: TIMER MODE SELECTOR
+                 Work | Short Break | Long Break
+                 One option checked at a time.
+                  -->
+            <RadioGroup
+                android:id="@+id/rgTimerMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card"
+                android:padding="4dp"
+                android:layout_marginBottom="28dp">
+
+                <RadioButton
+                    android:id="@+id/rbWork"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/timer_work"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_radio_tab"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="4dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbShortBreak"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/timer_short_break"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/selector_radio_tab"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_marginEnd="4dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbLongBreak"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/timer_long_break"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/selector_radio_tab"
+                    android:textColor="@color/colorTextSecondary"/>
+
+            </RadioGroup>
+
+            <!-- Current subject label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timer_current_subject"
+                android:textSize="13sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Subject selector chip -->
+            <TextView
+                android:id="@+id/tvSubjectPicker"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timer_subject_hint"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/bg_chip"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Timer circle -->
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="260dp">
+
+                <View
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    android:background="@drawable/bg_timer_circle"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvTimerDisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timer_default"
+                        android:textSize="56sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/colorTextPrimary"/>
+
+                    <TextView
+                        android:id="@+id/tvTimerLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timer_focus_label"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Session progress dots -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp">
+
+                <View android:layout_width="12dp" android:layout_height="12dp"
+                    android:background="@drawable/bg_session_dot_on" android:layout_marginEnd="8dp"/>
+                <View android:layout_width="12dp" android:layout_height="12dp"
+                    android:background="@drawable/bg_session_dot_on" android:layout_marginEnd="8dp"/>
+                <View android:layout_width="12dp" android:layout_height="12dp"
+                    android:background="@drawable/bg_session_dot_off" android:layout_marginEnd="8dp"/>
+                <View android:layout_width="12dp" android:layout_height="12dp"
+                    android:background="@drawable/bg_session_dot_off"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timer_session_count"
+                android:textSize="12sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Controls row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Reset -->
+                <TextView
+                    android:id="@+id/btnReset"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/timer_reset"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card"
+                    android:layout_marginEnd="20dp"/>
+
+                <!-- Start / Pause (primary) -->
+                <TextView
+                    android:id="@+id/btnStartPause"
+                    android:layout_width="110dp"
+                    android:layout_height="52dp"
+                    android:text="@string/timer_start"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/selector_button_primary"
+                    android:layout_marginEnd="20dp"/>
+
+                <!-- Skip -->
+                <TextView
+                    android:id="@+id/btnSkip"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/timer_skip"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card"/>
+            </LinearLayout>
+
+            <!-- Focus mode toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card"
+                android:padding="14dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/timer_focus_mode"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextPrimary"/>
+
+                <Switch
+                    android:id="@+id/switchFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:thumbTint="@color/colorPrimary"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.studytracker.app-mergeDebugResources-57:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Sabri laptop\\.gradle\\caches\\8.10.2\\transforms\\bd554bbeacd0aa832601b6b1436d43df\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

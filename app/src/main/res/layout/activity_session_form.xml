@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Study Session"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spSubject"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration (minutes)"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 45"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focus Score (0-100)"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 85"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save Session"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+</ScrollView>

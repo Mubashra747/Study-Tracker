@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRIMARY BRAND PALETTE (Darker versions for night) -->
+    <color name="colorPrimary">#818CF8</color>
+    <color name="colorPrimaryDark">#4F46E5</color>
+    <color name="colorPrimaryLight">#A5B4FC</color>
+    <color name="colorPrimaryExtraLight">#1E1B4B</color>
+    <color name="colorAccent">#34D399</color>
+    <color name="colorAccentDark">#10B981</color>
+
+    <!-- BACKGROUNDS & SURFACES -->
+    <color name="colorBackground">#0F172A</color>
+    <color name="colorSurface">#1E293B</color>
+    <color name="colorCardBg">#1E293B</color>
+    <color name="colorInputBg">#334155</color>
+
+    <!-- TEXT -->
+    <color name="colorTextPrimary">#F8FAFC</color>
+    <color name="colorTextSecondary">#94A3B8</color>
+    <color name="colorTextHint">#64748B</color>
+    <color name="colorTextOnPrimary">#0F172A</color>
+    <color name="colorTextOnDark">#F8FAFC</color>
+
+    <!-- UI CHROME -->
+    <color name="colorDivider">#334155</color>
+    <color name="colorBorder">#475569</color>
+    <color name="colorStatusBar">#0F172A</color>
+    <color name="colorNavBar">#0F172A</color>
+    <color name="colorBottomNavSelected">#818CF8</color>
+    <color name="colorBottomNavUnselected">#64748B</color>
+
+    <!-- CHIP / TAG -->
+    <color name="colorChipBg">#1E1B4B</color>
+    <color name="colorChipBackground">#1E1B4B</color>
+    <color name="colorChipText">#C7D2FE</color>
+    <color name="colorChipBorder">#4F46E5</color>
+</resources>

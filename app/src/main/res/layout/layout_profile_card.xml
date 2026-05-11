@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  layout_profile_card.xml  —  PROFILE HEADER CARD
+
+  L2  ConstraintLayout
+         • Guideline  (vertical @28%) — separates avatar from text
+         • Chain      (spread_inside) — 3 buttons distributed evenly
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintProfileCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_primary_gradient"
+    android:padding="16dp">
+
+    <!-- ───────── Vertical Guideline at 28 % ───────── -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="122dp" />
+
+    <!--  Horizontal Guideline at 50 % (mid-card) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <!-- Avatar: left of vertical guideline, top half -->
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_avatar"
+        android:contentDescription="@string/cd_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideV"
+        app:layout_constraintBottom_toTopOf="@id/guideH"/>
+
+    <!-- Level badge: below avatar, centred under it -->
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_level"
+        android:textSize="9sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintTop_toBottomOf="@id/ivAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideV"
+        android:layout_marginTop="6dp"/>
+
+    <!-- Profile name: right of guideline, aligned top of avatar -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mubashra"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"/>
+
+    <!-- Subtitle: below name, right of guideline -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_profile_sub"
+        android:textSize="12sp"
+        android:textColor="#CCFFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/guideV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Thin divider line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ── CHAIN: 3 action buttons, spread_inside ── -->
+
+    <!-- Button A: Edit -->
+    <TextView
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✏️ Edit"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_outline_white"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnGoals"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Button B: Goals -->
+    <TextView
+        android:id="@+id/btnGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎯 Goals"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_outline_white"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/btnEdit"
+        app:layout_constraintEnd_toStartOf="@id/btnShare"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Button C: Share -->
+    <TextView
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📤 Share"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_outline_white"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/btnGoals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

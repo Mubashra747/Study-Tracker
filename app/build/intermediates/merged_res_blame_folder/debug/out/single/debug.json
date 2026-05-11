@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_rounded_button.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_rounded_button.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_success_card.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_success_card.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_timer_circle_long.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_timer_circle_long.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_main.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_button_outline.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_button_outline.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_progress_bar.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_progress_bar.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_chip.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_settings.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_analytics.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_analytics.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_session_dot_on.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_session_dot_on.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_timer_circle_break.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_timer_circle_break.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_outline_button.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_outline_button.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_selector_radio_tab.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/selector_radio_tab.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_timer_circle.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_timer_circle.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_analytics.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_analytics.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.studytracker.app-main-61:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_splash.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_notification.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_fragment_dashboard.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_timer.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_timer.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_arrow_right.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_arrow_right.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_settings.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_timer.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_timer.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_avatar_ring.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_avatar_ring.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_selector_chip.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/selector_chip.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_skip_next.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_skip_next.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_tag_cloud.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_tag_cloud.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_stats_bar.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_stats_bar.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_badge.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_dashboard.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_dashboard.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_button_outline_white.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_button_outline_white.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_dashboard_grid.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_dashboard_grid.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_selector_button_primary.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/selector_button_primary.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_edit.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.studytracker.app-main-61:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_button_primary.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_login.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_card.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_play.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_replay.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_replay.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_carousel.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_carousel.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_session_dot_off.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_session_dot_off.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_primary_gradient.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_primary_gradient.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_circle_timer.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_circle_timer.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_selector_bottom_nav.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/selector_bottom_nav.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_history.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_history.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_warning_card.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_warning_card.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.studytracker.app-main-61:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.studytracker.app-main-61:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.studytracker.app-main-61:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_selector_card_ripple.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/selector_card_ripple.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_check_circle.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_activity_history.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_profile_card.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_profile_card.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_progress_track.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_progress_track.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_content_dashboard.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/content_dashboard.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/layout_layout_subject_carousel.xml.flat",
+        "source": "com.studytracker.app-main-61:/layout/layout_subject_carousel.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_bg_primary_card.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/bg_primary_card.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_logout.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_star.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_pause.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_pause.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_avatar.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_avatar.xml"
+    },
+    {
+        "merged": "com.studytracker.app-merged_res-59:/drawable_ic_study_book.xml.flat",
+        "source": "com.studytracker.app-main-61:/drawable/ic_study_book.xml"
+    }
+]

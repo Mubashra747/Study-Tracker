@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gold/amber ring drawn behind the avatar for level indicator -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/transparent"/>
+    <stroke android:width="3dp" android:color="@color/colorSecondary"/>
+    <size android:width="80dp" android:height="80dp"/>
+</shape>

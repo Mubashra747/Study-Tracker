@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  layout_stats_bar.xml  —  TODAY'S STATS ROW
+
+  L3   LinearLayout — 2 stat columns each layout_weight="1"
+         Forces identical width regardless of content length.
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearStatsBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card"
+    android:padding="12dp">
+
+    <!-- ── Stat 1: Hours — weight=1 ── -->
+    <LinearLayout
+        android:id="@+id/statHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⏱️" android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/tvHoursVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/label_hours_studied"
+            android:textSize="10sp"
+            android:textColor="@color/colorTextSecondary"/>
+    </LinearLayout>
+
+    <!-- vertical divider -->
+    <View android:layout_width="1dp" android:layout_height="match_parent"
+        android:background="@color/colorDivider"
+        android:layout_marginTop="4dp" android:layout_marginBottom="4dp"/>
+
+    <!-- ── Stat 2: Sessions — weight=1 ── -->
+    <LinearLayout
+        android:id="@+id/statSessions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍅"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvSessionsVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="6"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_sessions"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

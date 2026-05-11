@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+         BASE APPLICATION THEME
+          -->
+    <style name="Theme.StudyTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccentDark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorTextPrimary</item>
+        <item name="colorOnBackground">@color/colorTextPrimary</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/colorNavBar</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="materialCardViewStyle">@style/Widget.StudyTracker.CardView</item>
+    </style>
+
+    <!--
+         SPLASH THEME
+         -->
+    <style name="Theme.StudyTracker.Splash" parent="Theme.StudyTracker">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <!--
+         CARD VIEW
+        -->
+    <style name="Widget.StudyTracker.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardCornerRadius">@dimen/radius_12</item>
+        <item name="cardBackgroundColor">@color/colorCardBg</item>
+        <item name="contentPaddingLeft">0dp</item>
+        <item name="contentPaddingTop">0dp</item>
+        <item name="contentPaddingRight">0dp</item>
+        <item name="contentPaddingBottom">0dp</item>
+    </style>
+
+    <!--
+         TOOLBAR
+          -->
+    <style name="Widget.StudyTracker.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <!--
+         TEXT APPEARANCES
+         -->
+    <style name="TextAppearance.StudyTracker" parent="TextAppearance.MaterialComponents.Body1" />
+
+    <style name="TextAppearance.StudyTracker.CollapsingTitle"
+        parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!--
+         BUTTONS
+          -->
+    <style name="Widget.StudyTracker.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/radius_24</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Widget.StudyTracker.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="cornerRadius">@dimen/radius_24</item>
+    </style>
+
+    <style name="TextAppearance.StudyTracker.Heading" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.StudyTracker.Title" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.StudyTracker.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.StudyTracker.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/colorTextHint</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.StudyTracker.SectionLabel" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--
+         CHIP
+          -->
+    <style name="Widget.StudyTracker.Chip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/colorChipBg</item>
+        <item name="android:textColor">@color/colorChipText</item>
+        <item name="chipStrokeColor">@color/colorChipBorder</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">@dimen/radius_16</item>
+        <item name="chipMinHeight">32dp</item>
+    </style>
+
+    <!--
+         DIALOG
+          -->
+    <style name="Theme.StudyTracker.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.StudyTracker.Button.Primary</item>
+    </style>
+
+</resources>

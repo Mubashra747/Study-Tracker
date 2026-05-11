@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Circular ring for short-break timer state (green stroke) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/colorTimerBg"/>
+    <stroke android:width="10dp" android:color="@color/colorTimerBreak"/>
+    <size android:width="260dp" android:height="260dp"/>
+</shape>

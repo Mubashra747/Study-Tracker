@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ═══════════════════════ SPACING ═══════════════════════ -->
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+
+    <!-- ═══════════════════════ TEXT SIZES ═══════════════════════ -->
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <dimen name="text_32">32sp</dimen>
+    <dimen name="text_56">56sp</dimen>
+
+    <!-- ═══════════════════════ RADIUS ═══════════════════════ -->
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+    <dimen name="radius_12">12dp</dimen>
+    <dimen name="radius_16">16dp</dimen>
+    <dimen name="radius_24">24dp</dimen>
+    <dimen name="radius_full">100dp</dimen>
+
+    <!-- ═══════════════════════ ELEVATION ═══════════════════════ -->
+    <dimen name="elevation_card">4dp</dimen>
+    <dimen name="elevation_toolbar">6dp</dimen>
+    <dimen name="elevation_bottom_nav">8dp</dimen>
+
+    <!-- ═══════════════════════ COMPONENTS ═══════════════════════ -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="collapsing_toolbar_height">200dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
+    <dimen name="avatar_size_sm">36dp</dimen>
+    <dimen name="avatar_size_md">56dp</dimen>
+    <dimen name="avatar_size_lg">72dp</dimen>
+    <dimen name="badge_size">18dp</dimen>
+    <dimen name="icon_size_sm">20dp</dimen>
+    <dimen name="icon_size_md">24dp</dimen>
+    <dimen name="icon_size_lg">32dp</dimen>
+    <dimen name="timer_circle">260dp</dimen>
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="grid_card_height">100dp</dimen>
+    <dimen name="stats_bar_height">80dp</dimen>
+    <dimen name="carousel_card_width">130dp</dimen>
+    <dimen name="carousel_card_height">150dp</dimen>
+    <dimen name="progress_bar_height">6dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="session_dot_size">12dp</dimen>
+
+</resources>

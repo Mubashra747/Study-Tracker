@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  activity_history.xml  —  STUDY HISTORY SCREEN                     ║
+
+  L7   TableLayout — stretchColumns="2"                            ║
+         Column index 2 (Subject) expands to fill remaining width.   ║
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/historyToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="@string/history_title"
+            app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Filter tab bar (L3 linear weight reused) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:elevation="2dp">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="@string/history_all"
+            android:textSize="12sp" android:textColor="@color/white"
+            android:background="@drawable/bg_button_primary" android:gravity="center"
+            android:paddingTop="8dp" android:paddingBottom="8dp"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="@string/history_week"
+            android:textSize="12sp" android:textColor="@color/colorTextSecondary"
+            android:background="@drawable/bg_card" android:gravity="center"
+            android:paddingTop="8dp" android:paddingBottom="8dp"
+            android:layout_marginEnd="6dp"/>
+
+    </LinearLayout>
+
+    <!-- Summary banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryExtraLight"
+        android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:paddingTop="10dp" android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/history_summary"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/history_export"
+            android:textSize="13sp"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+    <!-- Table scroll container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <!--
+
+                L7 — TableLayout
+                stretchColumns="2" → Subject column (index 2) stretches
+                Columns: 0=Date  1=Time  2=Subject(stretch)  3=Sess  4=Score
+
+            -->
+            <TableLayout
+                android:id="@+id/tableHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="2">
+
+                <!-- ── HEADER ROW ── -->
+                <TableRow android:background="@color/colorPrimary">
+                    <TextView android:text="@string/col_date" android:textSize="12sp"
+                        android:textColor="@color/white" android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"/>
+                    <TextView android:text="@string/col_time" android:textSize="12sp"
+                        android:textColor="@color/white" android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"/>
+                    <!-- stretchColumns="2" targets this cell -->
+                    <TextView android:text="@string/col_subject" android:textSize="12sp"
+                        android:textColor="@color/white" android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"/>
+                    <TextView android:text="@string/col_sessions" android:textSize="12sp"
+                        android:textColor="@color/white" android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"/>
+                    <TextView android:text="@string/col_score" android:textSize="12sp"
+                        android:textColor="@color/white" android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"/>
+                </TableRow>
+
+                <!-- ── ROW 1 ── -->
+                <TableRow android:background="@color/white">
+                    <TextView android:text="Today" android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="2h 30m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="💻 Computer Science" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="5" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 92" android:textSize="12sp"
+                        android:textColor="@color/colorSuccess" android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider" android:layout_span="5"/>
+                </TableRow>
+
+                <!-- ── ROW 2 ── -->
+                <TableRow android:background="@color/colorBackground">
+                    <TextView android:text="Today" android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="1h 45m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="📐 Mathematics" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="3" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 85" android:textSize="12sp"
+                        android:textColor="@color/colorSuccess" android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider" android:layout_span="5"/>
+                </TableRow>
+
+                <!-- ── ROW 3 ── -->
+                <TableRow android:background="@color/white">
+                    <TextView android:text="Yest." android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="3h 00m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="⚡ Physics" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="6" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 78" android:textSize="12sp"
+                        android:textColor="@color/colorWarning" android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider" android:layout_span="5"/>
+                </TableRow>
+
+                <!-- ── ROW 4 ── -->
+                <TableRow android:background="@color/colorBackground">
+                    <TextView android:text="Yest." android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="1h 15m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="🧪 Chemistry" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="2" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 70" android:textSize="12sp"
+                        android:textColor="@color/colorWarning" android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider" android:layout_span="5"/>
+                </TableRow>
+
+                <!-- ── ROW 5 ── -->
+                <TableRow android:background="@color/white">
+                    <TextView android:text="Mon" android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="4h 00m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="💻 Computer Science" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="8" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 95" android:textSize="12sp"
+                        android:textColor="@color/colorSuccess" android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider" android:layout_span="5"/>
+                </TableRow>
+
+                <!-- ── ROW 6 ── -->
+                <TableRow android:background="@color/colorBackground">
+                    <TextView android:text="Sun" android:textSize="12sp"
+                        android:textColor="@color/colorTextPrimary" android:padding="10dp"/>
+                    <TextView android:text="2h 00m" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"/>
+                    <TextView android:text="📖 English Literature" android:textSize="12sp"
+                        android:textColor="@color/colorPrimary" android:padding="10dp"/>
+                    <TextView android:text="4" android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary" android:padding="10dp"
+                        android:gravity="center"/>
+                    <TextView android:text="⭐ 88" android:textSize="12sp"
+                        android:textColor="@color/colorSuccess" android:padding="10dp"/>
+                </TableRow>
+
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

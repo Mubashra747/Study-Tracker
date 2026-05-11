@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hollow dot = pending Pomodoro session -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/transparent"/>
+    <stroke android:width="2dp" android:color="@color/colorDivider"/>
+    <size android:width="12dp" android:height="12dp"/>
+</shape>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User avatar placeholder: coloured circle with white head + body silhouette -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+    <!-- Head (small oval, upper-center) -->
+    <item android:top="14dp" android:bottom="44dp"
+          android:left="28dp" android:right="28dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <!-- Body / shoulders (larger oval, lower half) -->
+    <item android:top="48dp" android:left="8dp"
+          android:right="8dp" android:bottom="-12dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  layout_tag_cloud.xml  —  SUBJECT TAG CLOUD
+
+  L10   ConstraintLayout + Flow helper widget
+          flow_wrapMode="chain" auto-wraps chips to the next line.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintTagCloud"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:padding="12dp">
+
+    <!-- Chips (invisible to constraint engine; Flow manages them) -->
+
+    <TextView android:id="@+id/chipMath"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_math" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipPhysics"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_physics" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipCS"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_cs" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipChem"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_chemistry" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipEnglish"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_english" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipHistory"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_history" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipBiology"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_biology" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipEcon"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_economics" android:textSize="12sp"
+        android:textColor="@color/colorChipText" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <TextView android:id="@+id/chipAdd"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/subject_add" android:textSize="12sp"
+        android:textColor="@color/colorAccent" android:background="@drawable/bg_chip"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+    <!-- ── Flow widget: wraps all chips automatically ── -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowTags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalGap="8dp"
+        app:flow_verticalGap="8dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_horizontalBias="0"
+        app:constraint_referenced_ids="chipMath,chipPhysics,chipCS,chipChem,chipEnglish,chipHistory,chipBiology,chipEcon,chipAdd"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

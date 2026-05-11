@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  activity_settings.xml  —  SETTINGS SCREEN
+
+  L4   RelativeLayout — each setting row uses:
+         • layout_toRightOf  (label right of icon)
+         • layout_below      (sub-label below main label)
+         • layout_alignParentEnd (control pinned to right edge)
+  L9   RadioGroup — Light / Dark / System theme selector
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settingsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="@string/settings_title"
+            app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ══════ SECTION: PROFILE ══════ -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="PROFILE" android:textSize="11sp"
+                android:textColor="@color/colorTextSecondary"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"
+                android:paddingBottom="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                xmlns:app2="http://schemas.android.com/apk/res-auto"
+                app2:cardCornerRadius="12dp" app2:cardElevation="4dp">
+
+                <!--
+
+                    L4 — RelativeLayout  PROFILE ROW
+                    • ivAvatar  : alignParentStart + centerVertical
+                    • tvName    : toRightOf(avatar) + alignTop(avatar)
+                    • tvSub     : below(tvName)     + toRightOf(avatar)
+                    • btnEdit   : alignParentEnd    + centerVertical
+
+                -->
+                <RelativeLayout
+                    android:id="@+id/relProfileRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivSettingsAvatar"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:src="@drawable/ic_avatar"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/cd_avatar"/>
+
+                    <TextView
+                        android:id="@+id/tvSettingsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_profile_name"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorTextPrimary"
+                        android:layout_toRightOf="@id/ivSettingsAvatar"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignTop="@id/ivSettingsAvatar"/>
+
+                    <TextView
+                        android:id="@+id/tvSettingsSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_profile_sub"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:layout_below="@id/tvSettingsName"
+                        android:layout_toRightOf="@id/ivSettingsAvatar"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/btnSettingsEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_edit"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ══════ SECTION: APP SETTINGS ══════ -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/settings_section_app" android:textSize="11sp"
+                android:textColor="@color/colorTextSecondary"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"
+                android:paddingBottom="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                xmlns:app3="http://schemas.android.com/apk/res-auto"
+                app3:cardCornerRadius="12dp" app3:cardElevation="4dp">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <!-- ── L4 RelativeLayout row: Notifications ── -->
+                    <RelativeLayout android:id="@+id/relNotifRow"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView android:id="@+id/ivNotifIcon"
+                            android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="🔔" android:textSize="18sp" android:gravity="center"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView android:id="@+id/tvNotifTitle"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_notifications" android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:layout_toRightOf="@id/ivNotifIcon"
+                            android:layout_marginStart="12dp"
+                            android:layout_alignTop="@id/ivNotifIcon"/>
+
+                        <TextView android:id="@+id/tvNotifSub"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_notif_sub" android:textSize="12sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:layout_below="@id/tvNotifTitle"
+                            android:layout_toRightOf="@id/ivNotifIcon"
+                            android:layout_marginStart="12dp"/>
+
+                        <Switch android:id="@+id/switchNotif"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:thumbTint="@color/colorPrimary"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- ── L4 RelativeLayout row: Sound ── -->
+                    <RelativeLayout android:id="@+id/relSoundRow"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView android:id="@+id/ivSoundIcon"
+                            android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="🔊" android:textSize="18sp" android:gravity="center"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView android:id="@+id/tvSoundTitle"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_sound" android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:layout_toRightOf="@id/ivSoundIcon"
+                            android:layout_marginStart="12dp"
+                            android:layout_alignTop="@id/ivSoundIcon"/>
+
+                        <TextView android:id="@+id/tvSoundSub"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_sound_sub" android:textSize="12sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:layout_below="@id/tvSoundTitle"
+                            android:layout_toRightOf="@id/ivSoundIcon"
+                            android:layout_marginStart="12dp"/>
+
+                        <Switch android:id="@+id/switchSound"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:thumbTint="@color/colorPrimary"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/colorDivider"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- ── L4 RelativeLayout row: AI Insights ── -->
+                    <RelativeLayout android:id="@+id/relAIRow"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView android:id="@+id/ivAIIcon"
+                            android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="🤖" android:textSize="18sp" android:gravity="center"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView android:id="@+id/tvAITitle"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_ai" android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:layout_toRightOf="@id/ivAIIcon"
+                            android:layout_marginStart="12dp"
+                            android:layout_alignTop="@id/ivAIIcon"/>
+
+                        <TextView android:id="@+id/tvAISub"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/settings_ai_sub" android:textSize="12sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:layout_below="@id/tvAITitle"
+                            android:layout_toRightOf="@id/ivAIIcon"
+                            android:layout_marginStart="12dp"/>
+
+                        <Switch android:id="@+id/switchAI"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:thumbTint="@color/colorPrimary"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ══════ SECTION: APPEARANCE ══════ -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/settings_section_appearance" android:textSize="11sp"
+                android:textColor="@color/colorTextSecondary"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"
+                android:paddingBottom="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                xmlns:app4="http://schemas.android.com/apk/res-auto"
+                app4:cardCornerRadius="12dp" app4:cardElevation="4dp">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/settings_theme_title" android:textSize="15sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorTextPrimary"
+                        android:paddingBottom="12dp"/>
+
+                    <!--
+                        ═════════════════════════════════════════
+                        L9 — RadioGroup  THEME MODE SELECTOR
+                        Light / Dark / System — one at a time
+                        ═════════════════════════════════════════
+                    -->
+                    <RadioGroup
+                        android:id="@+id/rgTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton android:id="@+id/rbLight"
+                            android:layout_width="match_parent" android:layout_height="48dp"
+                            android:text="@string/settings_light" android:textSize="14sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:checked="true"
+                            android:buttonTint="@color/colorPrimary"
+                            android:paddingStart="4dp"/>
+
+                        <RadioButton android:id="@+id/rbDark"
+                            android:layout_width="match_parent" android:layout_height="48dp"
+                            android:text="@string/settings_dark" android:textSize="14sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:buttonTint="@color/colorPrimary"
+                            android:paddingStart="4dp"/>
+
+                        <RadioButton android:id="@+id/rbSystem"
+                            android:layout_width="match_parent" android:layout_height="48dp"
+                            android:text="@string/settings_system" android:textSize="14sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:buttonTint="@color/colorPrimary"
+                            android:paddingStart="4dp"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ══════ SECTION: ACCOUNT ══════ -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/settings_section_account" android:textSize="11sp"
+                android:textColor="@color/colorTextSecondary"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"
+                android:paddingBottom="8dp"/>
+
+            <!-- ── L4 RelativeLayout: Logout row ── -->
+            <RelativeLayout
+                android:id="@+id/relLogoutRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView android:id="@+id/ivLogoutIcon"
+                    android:layout_width="32dp" android:layout_height="32dp"
+                    android:src="@drawable/ic_logout"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"/>
+
+                <TextView android:id="@+id/tvLogout"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/settings_logout" android:textSize="15sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorError"
+                    android:layout_toRightOf="@id/ivLogoutIcon"
+                    android:layout_marginStart="12dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="@color/colorError"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

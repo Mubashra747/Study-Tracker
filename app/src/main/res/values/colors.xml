@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+         PRIMARY BRAND PALETTE
+         -->
+    <color name="colorPrimary">#4F46E5</color>
+    <color name="colorPrimaryDark">#3730A3</color>
+    <color name="colorPrimaryLight">#818CF8</color>
+    <color name="colorPrimaryExtraLight">#EEF2FF</color>
+    <color name="colorAccent">#10B981</color>
+    <color name="colorAccentDark">#059669</color>
+
+    <!--
+         SECONDARY / HIGHLIGHT
+  -->
+    <color name="colorSecondary">#F59E0B</color>
+    <color name="colorSecondaryDark">#D97706</color>
+    <color name="colorPurple">#7C3AED</color>
+
+    <!--
+         BACKGROUNDS & SURFACES
+      -->
+    <color name="colorBackground">#F8F7FF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorCardBg">#FFFFFF</color>
+    <color name="colorInputBg">#F3F4F6</color>
+
+    <!--
+         TEXT
+        -->
+    <color name="colorTextPrimary">#1E1B4B</color>
+    <color name="colorTextSecondary">#6B7280</color>
+    <color name="colorTextHint">#9CA3AF</color>
+    <color name="colorTextOnPrimary">#FFFFFF</color>
+    <color name="colorTextOnDark">#FFFFFF</color>
+
+    <!--
+         STATUS COLORS
+-->
+    <color name="colorSuccess">#10B981</color>
+    <color name="colorSuccessBg">#D1FAE5</color>
+    <color name="colorWarning">#F59E0B</color>
+    <color name="colorWarningBg">#FEF3C7</color>
+    <color name="colorError">#EF4444</color>
+    <color name="colorErrorBg">#FEE2E2</color>
+    <color name="colorInfo">#3B82F6</color>
+    <color name="colorInfoBg">#DBEAFE</color>
+
+    <!--
+         UI CHROME
+         -->
+    <color name="colorDivider">#E5E7EB</color>
+    <color name="colorBorder">#E0E0E0</color>
+    <color name="colorBadge">#EF4444</color>
+    <color name="colorStatusBar">#3730A3</color>
+    <color name="colorNavBar">#FFFFFF</color>
+    <color name="colorBottomNavSelected">#4F46E5</color>
+    <color name="colorBottomNavUnselected">#9CA3AF</color>
+    <color name="colorScrim">#80000000</color>
+
+    <!--
+         CHIP / TAG
+        -->
+    <color name="colorChipBg">#EEF2FF</color>
+    <color name="colorChipBackground">#EEF2FF</color><!-- alias used in timer drawables -->
+    <color name="colorChipText">#4F46E5</color>
+    <color name="colorChipBorder">#C7D2FE</color>
+
+    <!--
+         TIMER STATES
+         -->
+    <color name="colorTimerWork">#4F46E5</color>
+    <color name="colorTimerBreak">#10B981</color>
+    <color name="colorTimerLong">#F59E0B</color>
+    <color name="colorTimerBg">#EEF2FF</color>
+
+    <!--
+         CHART SERIES
+       -->
+    <color name="colorChart1">#4F46E5</color>
+    <color name="colorChart2">#10B981</color>
+    <color name="colorChart3">#F59E0B</color>
+    <color name="colorChart4">#EF4444</color>
+    <color name="colorChart5">#8B5CF6</color>
+
+    <!--
+         BASICS -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

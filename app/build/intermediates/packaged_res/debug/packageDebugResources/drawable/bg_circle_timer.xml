@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Circle background for Pomodoro timer -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/colorChipBackground"/>
+    <stroke android:width="10dp" android:color="@color/colorPrimary"/>
+    <size android:width="260dp" android:height="260dp"/>
+</shape>

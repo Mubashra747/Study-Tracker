@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Session"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etEditDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration (minutes)"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etEditDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focus Score"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etEditScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Score"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="@color/colorTextSecondary"/>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

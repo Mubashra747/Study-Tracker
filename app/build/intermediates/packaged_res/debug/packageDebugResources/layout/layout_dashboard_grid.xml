@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  layout_dashboard_grid.xml  —  QUICK-ACTION GRID
+
+  L6   GridLayout — columnCount="2"
+         First card uses layout_columnSpan="2" → full-width hero.
+
+-->
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridDashboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:useDefaultMargins="true">
+
+    <!-- ══ HERO CARD — spans 2 columns ══ -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardStartSession"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_primary_gradient"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:text="▶"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/bg_badge"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_start_session"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_start_desc"
+                    android:textSize="12sp"
+                    android:textColor="#CCFFFFFF"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/white"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Small card: Analytics ── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAnalytics"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📊" android:textSize="28sp" tools:ignore="HardcodedText" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_analytics" android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" android:textColor="@color/colorTextPrimary"
+                android:layout_marginTop="6dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_analytics_desc" android:textSize="11sp"
+                android:textColor="@color/colorTextSecondary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Small card: Goals ── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGoals"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🎯" android:textSize="28sp" tools:ignore="HardcodedText" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_goals" android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" android:textColor="@color/colorTextPrimary"
+                android:layout_marginTop="6dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_goals_desc" android:textSize="11sp"
+                android:textColor="@color/colorSuccess"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Small card: AI Predict ── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAI"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🤖" android:textSize="28sp" tools:ignore="HardcodedText" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_ai" android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" android:textColor="@color/colorTextPrimary"
+                android:layout_marginTop="6dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_ai_desc" android:textSize="11sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>

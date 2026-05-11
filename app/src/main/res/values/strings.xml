@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">StudyTracker</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_timer">Timer</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_tips">Tips</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_morning">Good Morning 👋</string>
+    <string name="greeting_afternoon">Good Afternoon 👋</string>
+    <string name="greeting_evening">Good Evening 👋</string>
+    <string name="dashboard_subtitle">Ready to study smart today?</string>
+    <string name="label_hours_studied">Hours Studied</string>
+    <string name="label_sessions">Sessions</string>
+    <string name="label_quick_start">Quick Start</string>
+    <string name="label_ai_insight">AI Insight</string>
+    <string name="label_recent_subjects">Recent Subjects</string>
+    <string name="label_my_subjects">My Subjects</string>
+    <string name="label_see_all">See All →</string>
+    <string name="label_today_goal">Today\'s Goal</string>
+
+    <!-- Cards -->
+    <string name="card_start_session">Start Study Session</string>
+    <string name="card_start_desc">Pomodoro • 25 min focus</string>
+    <string name="card_analytics">Analytics</string>
+    <string name="card_analytics_desc">View trends</string>
+    <string name="card_goals">Goals</string>
+    <string name="card_goals_desc">3 of 5 done</string>
+    <string name="card_ai">AI Predict</string>
+    <string name="card_ai_desc">Best: 9–11 AM</string>
+    <string name="card_flashcards">Flashcards</string>
+    <string name="card_flashcards_desc">24 due today</string>
+
+    <!-- AI Insight Card -->
+    <string name="ai_badge">🤖 Smart Suggestion</string>
+    <string name="ai_text">Your peak focus hours are 9–11 AM. You completed 3 more sessions on days you studied Math first. Try scheduling Math tomorrow morning!</string>
+    <string name="ai_confidence">Confidence: 87%</string>
+    <string name="ai_more">View More Insights →</string>
+
+    <!-- Timer -->
+    <string name="timer_title">Pomodoro Timer</string>
+    <string name="timer_work">Work</string>
+    <string name="timer_short_break">Short Break</string>
+    <string name="timer_long_break">Long Break</string>
+    <string name="timer_start">▶  START</string>
+    <string name="timer_pause">⏸  PAUSE</string>
+    <string name="timer_reset">↺</string>
+    <string name="timer_skip">⏭</string>
+    <string name="timer_default">25:00</string>
+    <string name="timer_focus_label">Focus Time</string>
+    <string name="timer_break_label">Short Break</string>
+    <string name="timer_long_label">Long Break</string>
+    <string name="timer_subject_hint">💻  Computer Science  ▼</string>
+    <string name="timer_current_subject">Current Subject</string>
+    <string name="timer_session_count">Session 3 of 4</string>
+    <string name="timer_focus_mode">🎯 Focus Mode (Block distractions)</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics</string>
+    <string name="analytics_weekly">Weekly</string>
+    <string name="analytics_monthly">Monthly</string>
+    <string name="analytics_score">87</string>
+    <string name="analytics_score_label">Productivity</string>
+    <string name="analytics_hours">32h</string>
+    <string name="analytics_hours_label">Total Hours</string>
+    <string name="analytics_avg">48m</string>
+    <string name="analytics_avg_label">Avg Session</string>
+    <string name="analytics_chart_title">📈  Study Hours This Week</string>
+    <string name="analytics_breakdown_title">📚  Subject Breakdown</string>
+
+    <!-- History -->
+    <string name="history_title">Study History</string>
+    <string name="history_all">All Sessions</string>
+    <string name="history_week">This Week</string>
+    <string name="history_month">This Month</string>
+    <string name="history_summary">📊 Total: 42h 30m this month</string>
+    <string name="history_export">⬇ Export</string>
+    <string name="col_date">Date</string>
+    <string name="col_time">Time</string>
+    <string name="col_subject">Subject</string>
+    <string name="col_sessions">Sess.</string>
+    <string name="col_score">Score</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile_name">Mubashra</string>
+    <string name="settings_profile_sub">Computer Science Student</string>
+    <string name="settings_edit">Edit ›</string>
+    <string name="settings_section_app">APP SETTINGS</string>
+    <string name="settings_section_appearance">APPEARANCE</string>
+    <string name="settings_section_account">ACCOUNT</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notif_sub">Session reminders</string>
+    <string name="settings_sound">Sound &amp; Vibration</string>
+    <string name="settings_sound_sub">Timer alerts and signals</string>
+    <string name="settings_ai">AI Insights</string>
+    <string name="settings_ai_sub">Smart study recommendations</string>
+    <string name="settings_theme_title">🎨  Theme Mode</string>
+    <string name="settings_light">☀️  Light Mode</string>
+    <string name="settings_dark">🌙  Dark Mode</string>
+    <string name="settings_system">📱  System Default</string>
+    <string name="settings_logout">Log Out</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">Notifications</string>
+    <string name="notif_mark_read">Mark all read</string>
+    <string name="notif_2_title">🤖 AI Insight Ready</string>
+    <string name="notif_2_body">Your weekly productivity report is ready.</string>
+    <string name="notif_2_time">1 hr ago</string>
+    <string name="notif_3_title">📐 Study Reminder</string>
+    <string name="notif_3_body">You haven\'t studied Math in 3 days.</string>
+    <string name="notif_3_time">3 hrs ago</string>
+
+    <!-- Subjects -->
+    <string name="subject_math">📐 Mathematics</string>
+    <string name="subject_physics">⚡ Physics</string>
+    <string name="subject_cs">💻 Computer Science</string>
+    <string name="subject_chemistry">🧪 Chemistry</string>
+    <string name="subject_english">📖 English</string>
+    <string name="subject_history">🏛️ History</string>
+    <string name="subject_biology">🧬 Biology</string>
+    <string name="subject_economics">💹 Economics</string>
+    <string name="subject_add">＋ Add Subject</string>
+
+    <!-- Profile -->
+    <string name="profile_level">Level 12 Scholar</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_avatar">User avatar</string>
+    <string name="cd_notification">Notifications</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_back">Go back</string>
+
+    <!-- General -->
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Login</string>
+    <string name="login_signup">Sign Up</string>
+
+    <!-- Firebase/Google Auth -->
+    <string name="default_web_client_id">320083906377-5pucmborl7gpihoenrtmjv540uqte6jr.apps.googleusercontent.com</string>
+</resources>

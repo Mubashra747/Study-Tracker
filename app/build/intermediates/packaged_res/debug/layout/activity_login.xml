@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/bg_card"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_card"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_login"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button_primary"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_signup"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_button_outline"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  content_dashboard.xml  —  SCROLLABLE DASHBOARD BODY
+
+  Included inside NestedScrollView in activity_main.xml.
+  Contains all dashboard sections stacked vertically:
+    • Profile header card  (layout_profile_card.xml)
+    • Stats bar            (layout_stats_bar.xml)
+    • Quick-start grid     (layout_dashboard_grid.xml)
+    • Recent subjects carousel  (layout_carousel.xml)
+    • AI insight card
+    • Tag cloud            (layout_tag_cloud.xml)
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- ── Profile Card (L2) ── -->
+    <include
+        android:id="@+id/includeProfile"
+        layout="@layout/layout_profile_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- ── Stats Bar (L3) ── -->
+    <include
+        android:id="@+id/includeStats"
+        layout="@layout/layout_stats_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"/>
+
+    <!-- ── Section: Quick Start ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_quick_start"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorTextPrimary"/>
+    </LinearLayout>
+
+    <!-- ── Dashboard Grid (L6) ── -->
+    <include
+        android:id="@+id/includeGrid"
+        layout="@layout/layout_dashboard_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- ── Section: Recent Subjects ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_recent_subjects"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_see_all"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <!-- ── Subject Carousel (L8) ── -->
+    <include
+        android:id="@+id/includeCarousel"
+        layout="@layout/layout_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- ── Section: AI Insight ── -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ai_insight"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorTextPrimary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- ── AI Insight Card ── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAiInsight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ai_badge"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvAiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ai_text"
+                android:textSize="13sp"
+                android:textColor="@color/colorTextSecondary"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ai_confidence"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorSuccess"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_more"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Section: My Subjects ── -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_my_subjects"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorTextPrimary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- ── Tag Cloud (L10) ── -->
+    <include
+        android:id="@+id/includeTagCloud"
+        layout="@layout/layout_tag_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
