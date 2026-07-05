@@ -3768,6 +3768,7 @@ id position
 id postLayout
 id pressed
 id progressBar
+id progressGoal
 id progress_circular
 id progress_horizontal
 id radio
@@ -3926,6 +3927,7 @@ id tvBadgeCount
 id tvDate
 id tvDuration
 id tvFormTitle
+id tvGoalsDesc
 id tvHours
 id tvHoursVal
 id tvLevel
@@ -4306,6 +4308,10 @@ string copy_toast_msg
 string dashboard_subtitle
 string default_web_client_id
 string dest_title
+string dialog_add_subject_msg
+string dialog_add_subject_title
+string dialog_set_goal_msg
+string dialog_set_goal_title
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4316,6 +4322,7 @@ string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string firebase_database_url
 string gcm_defaultSenderId
+string goal_progress_format
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -4324,6 +4331,7 @@ string greeting_afternoon
 string greeting_evening
 string greeting_morning
 string hide_bottom_view_on_scroll_behavior
+string hint_subject_name
 string history_all
 string history_export
 string history_month
@@ -4471,6 +4479,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string session_duration_format
 string settings_ai
 string settings_ai_sub
 string settings_dark
@@ -4517,6 +4526,8 @@ string timer_start
 string timer_subject_hint
 string timer_title
 string timer_work
+string toast_goal_updated
+string toast_subject_added
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

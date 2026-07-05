@@ -141,8 +141,13 @@
     <string name="col_time">Time</string>
     <string name="dashboard_subtitle">Ready to study smart today?</string>
     <string name="default_web_client_id" translatable="false">320083906377-5pucmborl7gpihoenrtmjv540uqte6jr.apps.googleusercontent.com</string>
+    <string name="dialog_add_subject_msg">Enter the name of the subject:</string>
+    <string name="dialog_add_subject_title">Add New Subject</string>
+    <string name="dialog_set_goal_msg">How many hours do you want to focus today?</string>
+    <string name="dialog_set_goal_title">Set Daily Study Goal</string>
     <string name="firebase_database_url" translatable="false">https://studytracker-8733c-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">320083906377</string>
+    <string name="goal_progress_format">%1$.1f / %2$.1f hrs done</string>
     <string name="google_api_key" translatable="false">AIzaSyCZw_T2bae5gEFAsTwJLzp3El0kL61eTPo</string>
     <string name="google_app_id" translatable="false">1:320083906377:android:fc38bc2f9ded162a41d498</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCZw_T2bae5gEFAsTwJLzp3El0kL61eTPo</string>
@@ -150,6 +155,7 @@
     <string name="greeting_afternoon">Good Afternoon 👋</string>
     <string name="greeting_evening">Good Evening 👋</string>
     <string name="greeting_morning">Good Morning 👋</string>
+    <string name="hint_subject_name">e.g. Mathematics, Biology</string>
     <string name="history_all">All Sessions</string>
     <string name="history_export">⬇ Export</string>
     <string name="history_month">This Month</string>
@@ -184,6 +190,7 @@
     <string name="notif_title">Notifications</string>
     <string name="profile_level">Level 12 Scholar</string>
     <string name="project_id" translatable="false">studytracker-8733c</string>
+    <string name="session_duration_format">%dh %02dm</string>
     <string name="settings_ai">AI Insights</string>
     <string name="settings_ai_sub">Smart study recommendations</string>
     <string name="settings_dark">🌙  Dark Mode</string>
@@ -227,6 +234,8 @@
     <string name="timer_subject_hint">💻  Computer Science  ▼</string>
     <string name="timer_title">Pomodoro Timer</string>
     <string name="timer_work">Work</string>
+    <string name="toast_goal_updated">Goal updated to %1$s hours!</string>
+    <string name="toast_subject_added">%1$s added!</string>
     <style name="TextAppearance.StudyTracker" parent="TextAppearance.MaterialComponents.Body1"/>
     <style name="TextAppearance.StudyTracker.Body" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textColor">@color/colorTextSecondary</item>

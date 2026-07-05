@@ -38,6 +38,17 @@
     <string name="card_flashcards">Flashcards</string>
     <string name="card_flashcards_desc">24 due today</string>
 
+    <!-- Dialogs & Prompts -->
+    <string name="dialog_set_goal_title">Set Daily Study Goal</string>
+    <string name="dialog_set_goal_msg">How many hours do you want to focus today?</string>
+    <string name="dialog_add_subject_title">Add New Subject</string>
+    <string name="dialog_add_subject_msg">Enter the name of the subject:</string>
+    <string name="hint_subject_name">e.g. Mathematics, Biology</string>
+    <string name="toast_goal_updated">Goal updated to %1$s hours!</string>
+    <string name="toast_subject_added">%1$s added!</string>
+    <string name="goal_progress_format">%1$.1f / %2$.1f hrs done</string>
+    <string name="session_duration_format">%dh %02dm</string>
+
     <!-- AI Insight Card -->
     <string name="ai_badge">🤖 Smart Suggestion</string>
     <string name="ai_text">Your peak focus hours are 9–11 AM. You completed 3 more sessions on days you studied Math first. Try scheduling Math tomorrow morning!</string>

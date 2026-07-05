@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-
-  layout_dashboard_grid.xml  —  QUICK-ACTION GRID
-
-  L6   GridLayout — columnCount="2"
-         First card uses layout_columnSpan="2" → full-width hero.
-
--->
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,7 +9,7 @@
     android:columnCount="2"
     android:useDefaultMargins="true">
 
-    <!-- ══ HERO CARD — spans 2 columns ══ -->
+    <!-- ══ HERO CARD — Start Session ══ -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardStartSession"
         android:layout_width="0dp"
@@ -83,7 +75,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAnalytics"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_gravity="fill_horizontal"
         android:layout_margin="4dp"
         app:cardCornerRadius="12dp"
@@ -108,7 +100,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardGoals"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_gravity="fill_horizontal"
         android:layout_margin="4dp"
         app:cardCornerRadius="12dp"
@@ -118,14 +110,30 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
             android:orientation="vertical" android:gravity="center" android:padding="12dp">
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="🎯" android:textSize="28sp" tools:ignore="HardcodedText" />
+                android:text="🎯" android:textSize="26sp" tools:ignore="HardcodedText" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:text="@string/card_goals" android:textSize="13sp"
                 android:fontFamily="sans-serif-medium" android:textColor="@color/colorTextPrimary"
-                android:layout_marginTop="6dp"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="@string/card_goals_desc" android:textSize="11sp"
-                android:textColor="@color/colorSuccess"/>
+                android:layout_marginTop="4dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressGoal"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:progress="0"
+                android:max="100"
+                android:progressTint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tvGoalsDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Goal"
+                android:textSize="10sp"
+                android:textColor="@color/colorTextSecondary"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -133,7 +141,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAI"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_gravity="fill_horizontal"
         android:layout_margin="4dp"
         app:cardCornerRadius="12dp"

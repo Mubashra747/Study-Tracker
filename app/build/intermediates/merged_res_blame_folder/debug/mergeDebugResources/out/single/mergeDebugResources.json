@@ -1,23 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_bg_badge.xml.flat",
-        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\bg_badge.xml"
-    },
-    {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\layout_layout_stats_bar.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\layout\\layout_stats_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_bg_badge.xml.flat",
+        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\bg_badge.xml"
     },
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\mipmap-xxhdpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\mipmap-xxhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_ic_analytics.xml.flat",
-        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\ic_analytics.xml"
-    },
-    {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_ic_history.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_ic_analytics.xml.flat",
+        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\ic_analytics.xml"
     },
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\layout_fragment_dashboard.xml.flat",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\ic_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_bg_session_dot_off.xml.flat",
-        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\bg_session_dot_off.xml"
-    },
-    {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\mipmap-hdpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\mipmap-hdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_bg_session_dot_off.xml.flat",
+        "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\bg_session_dot_off.xml"
     },
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\layout_fragment_analytics.xml.flat",
@@ -62,6 +62,10 @@
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\color_selector_bottom_nav_colors.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\color\\selector_bottom_nav_colors.xml"
+    },
+    {
+        "merged": "com.studytracker.app-debug-65:/layout_layout_dashboard_grid.xml.flat",
+        "source": "com.studytracker.app-main-67:/layout/layout_dashboard_grid.xml"
     },
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\layout_fragment_session_list.xml.flat",
@@ -302,10 +306,6 @@
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\drawable_bg_progress_track.xml.flat",
         "source": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-main-67:\\drawable\\bg_progress_track.xml"
-    },
-    {
-        "merged": "com.studytracker.app-debug-65:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.studytracker.app-main-67:/menu/bottom_nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\Sabri laptop\\.gradle\\daemon\\8.10.2\\com.studytracker.app-debug-65:\\layout_item_subject.xml.flat",

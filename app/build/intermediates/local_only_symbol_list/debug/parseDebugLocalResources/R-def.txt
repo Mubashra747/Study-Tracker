@@ -226,6 +226,7 @@ id navItemTimer
 id navItemTips
 id pbProgress
 id progressBar
+id progressGoal
 id rbDark
 id rbLight
 id rbLongBreak
@@ -261,6 +262,7 @@ id tvBadgeCount
 id tvDate
 id tvDuration
 id tvFormTitle
+id tvGoalsDesc
 id tvHours
 id tvHoursVal
 id tvLevel
@@ -350,8 +352,13 @@ string col_subject
 string col_time
 string dashboard_subtitle
 string default_web_client_id
+string dialog_add_subject_msg
+string dialog_add_subject_title
+string dialog_set_goal_msg
+string dialog_set_goal_title
 string firebase_database_url
 string gcm_defaultSenderId
+string goal_progress_format
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -359,6 +366,7 @@ string google_storage_bucket
 string greeting_afternoon
 string greeting_evening
 string greeting_morning
+string hint_subject_name
 string history_all
 string history_export
 string history_month
@@ -393,6 +401,7 @@ string notif_mark_read
 string notif_title
 string profile_level
 string project_id
+string session_duration_format
 string settings_ai
 string settings_ai_sub
 string settings_dark
@@ -436,6 +445,8 @@ string timer_start
 string timer_subject_hint
 string timer_title
 string timer_work
+string toast_goal_updated
+string toast_subject_added
 style TextAppearance.StudyTracker
 style TextAppearance.StudyTracker.Body
 style TextAppearance.StudyTracker.Caption

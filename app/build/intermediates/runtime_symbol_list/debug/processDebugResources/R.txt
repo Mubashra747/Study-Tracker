@@ -3767,6 +3767,7 @@ int id position 0x7f0801be
 int id postLayout 0x7f0801bf
 int id pressed 0x7f0801c0
 int id progressBar 0x7f0801c1
+int id progressGoal 0x7f08028d
 int id progress_circular 0x7f0801c2
 int id progress_horizontal 0x7f0801c3
 int id radio 0x7f0801c4
@@ -3925,6 +3926,7 @@ int id tvBadgeCount 0x7f08025a
 int id tvDate 0x7f08025b
 int id tvDuration 0x7f08025c
 int id tvFormTitle 0x7f08025d
+int id tvGoalsDesc 0x7f08028e
 int id tvHours 0x7f08025e
 int id tvHoursVal 0x7f08025f
 int id tvLevel 0x7f080260
@@ -4305,6 +4307,10 @@ int string copy_toast_msg 0x7f110068
 int string dashboard_subtitle 0x7f110069
 int string default_web_client_id 0x7f11006a
 int string dest_title 0x7f11006b
+int string dialog_add_subject_msg 0x7f11013f
+int string dialog_add_subject_title 0x7f110140
+int string dialog_set_goal_msg 0x7f110141
+int string dialog_set_goal_title 0x7f110142
 int string error_a11y_label 0x7f11006c
 int string error_icon_content_description 0x7f11006d
 int string exposed_dropdown_menu_content_description 0x7f11006e
@@ -4315,6 +4321,7 @@ int string fallback_menu_item_open_in_browser 0x7f110072
 int string fallback_menu_item_share_link 0x7f110073
 int string firebase_database_url 0x7f110074
 int string gcm_defaultSenderId 0x7f110075
+int string goal_progress_format 0x7f110143
 int string google_api_key 0x7f110076
 int string google_app_id 0x7f110077
 int string google_crash_reporting_api_key 0x7f110078
@@ -4323,6 +4330,7 @@ int string greeting_afternoon 0x7f11007a
 int string greeting_evening 0x7f11007b
 int string greeting_morning 0x7f11007c
 int string hide_bottom_view_on_scroll_behavior 0x7f11007d
+int string hint_subject_name 0x7f110144
 int string history_all 0x7f11007e
 int string history_export 0x7f11007f
 int string history_month 0x7f110080
@@ -4470,6 +4478,7 @@ int string search_menu_title 0x7f11010c
 int string searchbar_scrolling_view_behavior 0x7f11010d
 int string searchview_clear_text_content_description 0x7f11010e
 int string searchview_navigation_content_description 0x7f11010f
+int string session_duration_format 0x7f110145
 int string settings_ai 0x7f110110
 int string settings_ai_sub 0x7f110111
 int string settings_dark 0x7f110112
@@ -4516,6 +4525,8 @@ int string timer_start 0x7f11013a
 int string timer_subject_hint 0x7f11013b
 int string timer_title 0x7f11013c
 int string timer_work 0x7f11013d
+int string toast_goal_updated 0x7f110146
+int string toast_subject_added 0x7f110147
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002
